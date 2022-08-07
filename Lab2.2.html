@@ -1,0 +1,63 @@
+<html>
+<head>
+</head>
+
+<body><fieldset>
+    <h1>เเบบฟอร์มจองทัวร์</h1>
+    <fieldset>
+    <legend>ข้อมูลทั่วไป</legend>
+    <b>ชื่อ-สกุล:</b><br>
+    <input type="text" id = "name" name="ชื่อ-สกุล" placeholder="กรอกชื่อ-สกุล"required>*<br>
+    <b>Email:</b><br>
+    <input type="text" id = "email" name="Email"required>*<br>
+    <b>โทรศัพท์:</b><br>
+    <input type="tel" id = "tel_number" name="Tel" value="+66"required>*<br>    
+    <b>ที่อยู่:</b><br>
+    <textarea id="address" name="address" rows="4" cols="30">
+        </textarea><br>
+    <b>รหัสไปรษณีย์:</b>
+    <input type="text" id = "post" name = "post" pattern="[0-9]{5}" maxlength="5" size = "5" ><br>    
+    <b>รูปผู้จอง:</b>
+    <input type="file">
+    </fieldset>
+    
+    <fieldset>
+        <legend>ข้อมูลเข้าสู่ระบบ</legend>
+        <b>Username:</b><br>
+        <input type="text" pattern="[\w]{8,}"><br>
+        <i>ประกอบด้วยตัวเลข ตัวอักษร หรือ _ ตั้งเเต่ 8 ขึ้นไป</i><br>
+        <b>Password:</b><br>
+        <input type ="text" pattern="[\s]{8,}"><br>
+        <i>ประกอบด้วยอักขระอะไรก็ได้ 8 ตัวขึ้นไป</i> 
+    </fieldset>
+
+    <fieldset>
+        <legend>ข้อมูลทัวร์ที่ต้องการ</legend>
+        <b>เเพคเกจทัวร์:</b>
+        <select name="country">
+            <option value="selected">--select--</option>
+            <option value="New Zealand">New Zealand</option>
+            <option value="England">England</option>
+            <option value="Laos">Laos</option>
+            <option value="Singapore">Singapore</option>
+            <option value="Italy">Italy</option>
+        </select><br>
+        
+        <b>วันที่เดินทาง </b>
+        <input type="date" placeholder="dd-mm-yyyy"><br>
+        <b>จำนวนผู้เดินทาง</b>
+        <input type="number" min= "1" max="10"><br>
+        <b>เน้นการท่องเที่ยวเเบบใด</b><br>
+        <input type="checkbox" id="discribe" name="discribe" value="letter">
+        <lable for="discribe">ชอปปิ้ง</lable><br>
+        <input type="checkbox" id="discribe" name="discribe" value="letter">
+        <lable for="discribe">ธรรมชาติ</lable><br>
+        <input type="checkbox" id="discribe" name="discribe" value="letter">
+        <lable for="discribe">ทะเล</lable><br>
+    </fieldset>
+    <b>ยอมรับเงื่อนไขเเละข้อตกลง</b>
+    <input type="radio" name ="Y/N" value="0" checked="checked">I agree
+    <input type="radio" name ="Y/N" value="1" >I disagree
+    <input type="button" value="จอง">
+</fieldset>
+</body>    
